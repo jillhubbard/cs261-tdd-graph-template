@@ -1,5 +1,5 @@
 # DO NOT MODIFY THIS FILE
-# Run me via: python3 -m unittest graph
+# Run me via: python3 -m unittest test_graph
 
 import unittest
 import time
