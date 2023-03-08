@@ -15,7 +15,7 @@ class TestGraph(unittest.TestCase):
 
     def test_instantiation(self):
         """
-        A Graph exists.
+        Test 1: A Graph exists.
         """
         try:
             Graph()
@@ -24,7 +24,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_internal(self):
     #     """
-    #     A graph uses an 'adjacency list' to represent vertices and edges.
+    #    Test 2: A graph uses an 'adjacency list' to represent vertices and edges.
     #     """
     #     g = Graph()
     #     self.assertEqual(dict, type(g.data))
@@ -35,14 +35,14 @@ class TestGraph(unittest.TestCase):
 
     # def test_adjacent_empty(self):
     #     """
-    #     An empty graph has no vertices, so adjacent returns false.
+    #     Test 3: An empty graph has no vertices, so adjacent returns false.
     #     """
     #     g = Graph()
     #     self.assertFalse(g.adjacent('A', 'B'))
 
     # def test_neighbors_empty(self):
     #     """
-    #     Asking for the neighbors of any vertex in an empty graph returns an empty
+    #     Test 4: Asking for the neighbors of any vertex in an empty graph returns an empty
     #     list.
     #     """
     #     g = Graph()
@@ -50,7 +50,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_add_vertex_empty(self):
     #     """
-    #     When storing a new vertex, the graph associates an empty list of neighbors.
+    #     Test 5: When storing a new vertex, the graph associates an empty list of neighbors.
     #     """
     #     g = Graph()
     #     g.add_vertex('A')
@@ -58,7 +58,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_remove_vertex_nonexistent(self):
     #     """
-    #     When removing a vertex that does not exist, nothing happens.
+    #     Test 6: When removing a vertex that does not exist, nothing happens.
     #     Hint: Just pass for now.
     #     """
     #     g = Graph()
@@ -70,7 +70,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_add_edge_nonexistent(self):
     #     """
-    #     Adding an edge between two vertices that do not exist does nothing.
+    #     Test 7: Adding an edge between two vertices that do not exist does nothing.
     #     Hint: Just pass for now.
     #     """
     #     g = Graph()
@@ -81,7 +81,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_remove_edge_nonexistent(self):
     #     """
-    #     Removing an edge that does not exist does nothing.
+    #     Test 8: Removing an edge that does not exist does nothing.
     #     Hint: Just pass for now.
     #     """
     #     g = Graph()
@@ -96,7 +96,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_adjacent_one(self):
     #     """
-    #     A graph with one vertex has no neighbors, so adjacent returns false.
+    #     Test 9: A graph with one vertex has no neighbors, so adjacent returns false.
     #     """
     #     g = Graph()
     #     g.data['A'] = []
@@ -105,7 +105,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_neighbors_one(self):
     #     """
-    #     Asking for the neighbors of a vertex in an graph with just one vertex
+    #     Test 10: Asking for the neighbors of a vertex in an graph with just one vertex
     #     returns an empty list.
     #     """
     #     g = Graph()
@@ -114,7 +114,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_add_vertex_one(self):
     #     """
-    #     When storing a new vertex in a graph with a single vertex, the graph
+    #     Test 11: When storing a new vertex in a graph with a single vertex, the graph
     #     adds the new vertex and associates an empty list of neighbors.
     #     """
     #     g = Graph()
@@ -125,7 +125,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_add_vertex_existing(self):
     #     """
-    #     When adding a vertex that already exists, the graph does not modify the
+    #     Test 12: When adding a vertex that already exists, the graph does not modify the
     #     existing vertex.
     #     """
     #     g = Graph()
@@ -135,7 +135,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_remove_vertex_one(self):
     #     """
-    #     Removing a vertex from a graph removes its entry from the graph's
+    #     Test 13: Removing a vertex from a graph removes its entry from the graph's
     #     adjacency list.
     #     """
     #     g = Graph()
@@ -145,7 +145,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_add_edge_one(self):
     #     """
-    #     Adding an edge between an existing vertex and one that does not exist
+    #     Test 14: Adding an edge between an existing vertex and one that does not exist
     #     does nothing.
     #     """
     #     g = Graph()
@@ -157,7 +157,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_remove_edge_one(self):
     #     """
-    #     Removing an edge that does not exist does nothing.
+    #     Test 15: Removing an edge that does not exist does nothing.
     #     """
     #     g = Graph()
     #     g.data['A'] = []
@@ -172,7 +172,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_adjacent_two(self):
     #     """
-    #     A vertex, v2, is a neighbor of v1 when v2 is present in v1's list of neighbors.
+    #     Test 16: A vertex, v2, is a neighbor of v1 when v2 is present in v1's list of neighbors.
     #     Note: Neighbors should indeed be present in each others' list of neighbors,
     #     but this isn't the job of the `adjacent` method.
     #     """
@@ -185,7 +185,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_neighbors_two(self):
     #     """
-    #     Asking for the neighbors of any vertex returns a list of its neighbors.
+    #     Test 17: Asking for the neighbors of any vertex returns a list of its neighbors.
     #     """
     #     g = Graph()
     #     g.data['A'] = ['B', 'FAKE']
@@ -196,7 +196,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_remove_vertex_two(self):
     #     """
-    #     Removing a vertex also removes it from all vertex neighbors lists.
+    #     Test 18: Removing a vertex also removes it from all vertex neighbors lists.
     #     """
     #     g = Graph()
     #     g.data['A'] = ['B']
@@ -207,7 +207,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_add_edge_two(self):
     #     """
-    #     Adding an edge between two vertices adds each vertex to both of their
+    #     Test 19: Adding an edge between two vertices adds each vertex to both of their
     #     neighbor lists.
     #     """
     #     g = Graph()
@@ -224,7 +224,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_add_edge_existing_two(self):
     #     """
-    #     Adding an edge to vertices that already share and edge does not create a
+    #     Test 20: Adding an edge to vertices that already share and edge does not create a
     #     second edge.
     #     """
     #     g = Graph()
@@ -236,7 +236,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_remove_edge_two(self):
     #     """
-    #     Removing an edge between two vertices removes each vertex from both
+    #     Test 21: Removing an edge between two vertices removes each vertex from both
     #     neighbors lists.
     #     """
     #     g = Graph()
@@ -253,7 +253,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_remove_edge_nonexisting_two(self):
     #     """
-    #     Removing an edge that does not exist does nothing.
+    #     Test 22: Removing an edge that does not exist does nothing.
     #     """
     #     g = Graph()
     #     g.data['A'] = ['FAKE']
@@ -269,7 +269,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_adjacent(self):
     #     """
-    #     Two vertices are adjacent if they share an edge.
+    #     Test 23: Two vertices are adjacent if they share an edge.
     #     """
     #     g = larger_graph()
     #     self.assertTrue(g.adjacent('A', 'B'))
@@ -287,7 +287,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_neighbors(self):
     #     """
-    #     Vertices that share an edge are neighbors.
+    #     Test 24: Vertices that share an edge are neighbors.
     #     """
     #     g = larger_graph()
     #     self.assertEqual(['B', 'C', 'D'], g.neighbors('A'))
@@ -297,7 +297,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_add_vertex(self):
     #     """
-    #     Adding a vertex to a graph only creates a new entry in the adjacency list.
+    #     Test 25: Adding a vertex to a graph only creates a new entry in the adjacency list.
     #     """
     #     g = larger_graph()
     #     g.add_vertex('E')
@@ -309,7 +309,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_remove_vertex(self):
     #     """
-    #     Removing a vertex also removes its edges.
+    #     Test 26: Removing a vertex also removes its edges.
     #     Hint: Be efficient. Traversing all the vertices (keys) is inefficient.
     #     """
     #     g = larger_graph()
@@ -320,7 +320,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_add_edge(self):
     #     """
-    #     Adding an edge between two vertices connects them as adjacent neighbors.
+    #     Test 27: Adding an edge between two vertices connects them as adjacent neighbors.
     #     """
     #     g = larger_graph()
     #     g.add_edge('D', 'B')
@@ -333,7 +333,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_remove_edge(self):
     #     """
-    #     Removing an edge disconnects two vertices.
+    #     Test 28: Removing an edge disconnects two vertices.
     #     """
     #     g = larger_graph()
     #     g.remove_edge('A', 'B')
@@ -350,7 +350,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_v(self):
     #     """
-    #     |V| is the number of vertices in a graph.
+    #     Test 29: |V| is the number of vertices in a graph.
     #     """
     #     g = Graph()
     #     g.add_vertex('A')
@@ -361,7 +361,7 @@ class TestGraph(unittest.TestCase):
 
     # def test_e(self):
     #     """
-    #     |E| is the number of edges in a graph.
+    #     Test 30: |E| is the number of edges in a graph.
     #     Hint: There's an easy way - read or look it up?
     #     Bonus: Try reduce.
     #     """
